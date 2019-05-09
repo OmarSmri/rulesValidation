@@ -1,0 +1,71 @@
+data = {
+    "name": 11,
+    "age": "Hi"}
+rules = {
+    "name": "string",
+    "age": "number"}
+
+cA = {
+    "name" : "first name",
+    "age" : "old"
+}
+
+cE = {
+    "age.number" : "Please provide a valid number for the age",
+    "name.string" : "The name must be string"
+}
+************************
+data = {
+    "name": 11,
+    "age": "Hi",
+	"author": "abood"
+	"dob" : "15-05-2000"}
+rules = {
+    "name": "string",
+    "age": "number"
+	"author": "string",
+	"dob":"date"}
+
+cA = {
+    "name" : "first name",
+    "age" : "old"
+
+
+}
+
+cE = {
+    "age.number" : "Please provide a valid number for the age",
+    "name.string" : "The name must be string"
+	"author.string" : "author should be string",
+	"dob.date": "dob should be date"
+}
+*********************************************
+
+data = {
+    "name": 11,
+    "age": 101,
+	"author": "abood",
+	"dob" : "99-05-2000",
+    "salary":5000}
+rules = {
+    "name": "string",
+    "age": "number|max100",
+	"author": "string",
+	"dob": "date",
+    "salary": "min6000"
+
+    }
+
+cA = {
+    "name" : "first name",
+    "age" : "old"
+
+
+}
+
+cE = {
+    "age.number" : "Please provide a valid number for the age",
+    "name.string" : "The name must be string",
+	"author.string" : "author should be string",
+	"dob.date": "dob should be date"
+}
